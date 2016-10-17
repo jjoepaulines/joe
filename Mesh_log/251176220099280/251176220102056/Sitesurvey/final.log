@@ -1,0 +1,225 @@
+Mon Oct 17 00:24:31 IST 2016
+ra0       get_site_survey:
+Ch  SSID                             BSSID               Security               Siganl(%)W-Mode  ExtCH  NT WPS DPID
+1   NETGEAR18                        28:c6:8e:db:25:3b   WPA2PSK/AES            50       11b/g   NONE   In YES     
+2   sanjaynit                        90:8d:78:c2:ea:29   WPA1PSKWPA2PSK/AES     29       11b/g/n NONE   In YES     
+5   ap                               10:0d:7f:a9:b9:7a   WPA1PSKWPA2PSK/TKIPAES 2        11b/g/n NONE   In YES     
+6   santulucky                       e4:71:85:50:04:84   WPA1PSKWPA2PSK/TKIPAES 94       11b/g/n ABOVE  In  NO     
+6   wolf's                           28:c6:8e:d6:ff:ec   WPA1PSKWPA2PSK/TKIPAES 13       11b/g   NONE   In YES     
+6   bee..                            e4:71:85:60:02:d4   WPA2PSK/AES            83       11b/g/n ABOVE  In  NO     
+7   Kalyan141                        78:54:2e:f0:84:cc   WPA1PSKWPA2PSK/TKIPAES 42       11b/g/n NONE   In YES     
+8   CHETAN                           30:b5:c2:2d:c0:e2   WPA2PSK/AES            65       11b/g/n BELOW  In YES     
+9   sainilayam                       60:e3:27:55:ec:2a   WPA2PSK/AES            0        11b/g/n BELOW  In YES     
+10  DIGISOL                          00:17:7c:44:27:49   WPA1PSKWPA2PSK/AES     31       11b/g/n NONE   In YES     
+11  KUTIR                            4c:60:de:fe:81:c4   WPA2PSK/AES            15       11b/g/n NONE   In YES     
+11  SIN                              c0:a0:bb:c7:a4:10   WPA1PSKWPA2PSK/TKIPAES 29       11b/g/n NONE   In YES     
+11  hellonet                         50:6a:03:f1:42:6c   WPA2PSK/AES            0        11b/g/n NONE   In YES     
+11  myhotspot                        0c:60:76:0c:07:97   WPA2PSK/AES            63       11b     NONE   In  NO     
+11                                   e4:71:85:30:2f:4c   WPA1PSKWPA2PSK/TKIPAES 68       11b/g/n NONE   In  NO     
+
+Mon Oct 17 00:54:16 IST 2016
+ra0       get_site_survey:
+Ch  SSID                             BSSID               Security               Siganl(%)W-Mode  ExtCH  NT WPS DPID
+1   bond007                          70:5a:9e:65:8e:2a   WPA1PSKWPA2PSK/TKIPAES 31       11b/g/n NONE   In  NO     
+1   peek-a-boo                       c4:12:f5:76:85:48   WPA1PSKWPA2PSK/TKIPAES 29       11b/g/n NONE   In YES     
+1   GAURAV                           e8:cc:18:ba:5a:40   WPA1PSKWPA2PSK/AES     29       11b/g/n NONE   In YES     
+1   dlink                            c4:12:f5:72:06:fc   WPA1PSKWPA2PSK/TKIPAES 29       11b/g/n NONE   In YES     
+1   NETGEAR18                        28:c6:8e:db:25:3b   WPA2PSK/AES            44       11b/g   NONE   In YES     
+1   solly                            90:8d:78:10:0b:29   WPA2PSK/AES            26       11b/g/n NONE   In  NO     
+2   Clash of Titans                  90:8d:78:c2:ed:5d   WPAPSK/TKIP            34       11b/g   NONE   In  NO     
+2   E3003                            18:a6:f7:7a:b4:32   WPA1PSKWPA2PSK/AES     20       11b/g/n ABOVE  In YES     
+2   sanjaynit                        90:8d:78:c2:ea:29   WPA1PSKWPA2PSK/AES     31       11b/g/n NONE   In YES     
+3   madhav                           6c:19:8f:0a:9e:7e   WPA1PSKWPA2PSK/TKIPAES 7        11b/g/n NONE   In YES     
+3   Kidar                            78:54:2e:a3:4a:2a   WPA1PSKWPA2PSK/TKIPAES 10       11b/g/n NONE   In YES     
+5   BEAM287953                       bc:96:81:f5:70:0b   WPAPSK/AES             31       11b/g/n ABOVE  In YES     
+5   ap                               10:0d:7f:a9:b9:7a   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+5   E-5013                           f4:f2:6d:2a:ce:54   WPA2PSK/AES            0        11b/g/n ABOVE  In YES     
+6   bee..                            e4:71:85:60:02:d4   WPA2PSK/AES            73       11b/g/n ABOVE  In  NO     
+6   santulucky                       e4:71:85:50:04:84   WPA1PSKWPA2PSK/TKIPAES 86       11b/g/n ABOVE  In  NO     
+6   wolf's                           28:c6:8e:d6:ff:ec   WPA1PSKWPA2PSK/TKIPAES 7        11b/g   NONE   In YES     
+6   bee..                            e4:71:85:60:00:84   WPA2PSK/AES            99       11b/g/n ABOVE  In  NO     
+7   Kalyan141                        78:54:2e:f0:84:cc   WPA1PSKWPA2PSK/TKIPAES 47       11b/g/n NONE   In YES     
+8   gowthami                         60:e3:27:55:ed:66   WPA2PSK/AES            2        11b/g/n BELOW  In YES     
+8   CHETAN                           30:b5:c2:2d:c0:e2   WPA2PSK/AES            68       11b/g/n BELOW  In YES     
+10  DIGISOL                          00:17:7c:44:27:49   WPA1PSKWPA2PSK/AES     20       11b/g/n NONE   In YES     
+11  myhotspot                        0c:60:76:0c:07:97   WPA2PSK/AES            63       11b     NONE   In  NO     
+11  KUTIR                            4c:60:de:fe:81:c4   WPA2PSK/AES            13       11b/g/n NONE   In YES     
+11  ZTE_MF29_428AD3                  78:e8:b6:42:8a:d3   WPA1PSKWPA2PSK/TKIPAES 20       11b/g/n NONE   In  NO     
+11                                   e4:71:85:30:2f:4c   WPA1PSKWPA2PSK/TKIPAES 70       11b/g/n NONE   In  NO     
+11  SIN                              c0:a0:bb:c7:a4:10   WPA1PSKWPA2PSK/TKIPAES 23       11b/g/n NONE   In YES     
+11  m&m                              d8:fe:e3:7b:24:7a   WPA1PSKWPA2PSK/TKIPAES 2        11b/g/n NONE   In YES     
+11  ALIBABA                          3c:1e:04:0c:31:e4   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+11  hellonet                         50:6a:03:f1:42:6c   WPA2PSK/AES            0        11b/g/n NONE   In YES     
+
+Mon Oct 17 09:17:19 IST 2016
+ra0       get_site_survey:
+Ch  SSID                             BSSID               Security               Siganl(%)W-Mode  ExtCH  NT WPS DPID
+1   NETGEAR18                        28:c6:8e:db:25:3b   WPA2PSK/AES            39       11b/g   NONE   In YES     
+1   dlink                            c4:12:f5:72:06:fc   WPA1PSKWPA2PSK/TKIPAES 31       11b/g/n NONE   In YES     
+2   E3003                            18:a6:f7:7a:b4:32   WPA1PSKWPA2PSK/AES     26       11b/g/n ABOVE  In YES     
+2   sanjaynit                        90:8d:78:c2:ea:29   WPA1PSKWPA2PSK/AES     34       11b/g/n ABOVE  In YES     
+3   Kidar                            78:54:2e:a3:4a:2a   WPA1PSKWPA2PSK/TKIPAES 5        11b/g/n NONE   In YES     
+4   BansalsNet                       6c:b0:ce:71:ff:94   WPA2PSK/AES            20       11b/g/n NONE   In YES     
+5   BEAM287953                       bc:96:81:f5:70:0b   WPAPSK/AES             18       11b/g/n NONE   In YES     
+5   ap                               10:0d:7f:a9:b9:7a   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+6   bee..                            e4:71:85:60:00:84   WPA2PSK/AES            100      11b/g/n ABOVE  In  NO     
+6   santulucky                       e4:71:85:50:04:84   WPA1PSKWPA2PSK/TKIPAES 81       11b/g/n ABOVE  In  NO     
+6   wolf's                           28:c6:8e:d6:ff:ec   WPA1PSKWPA2PSK/TKIPAES 10       11b/g   NONE   In YES     
+6   bee..                            e4:71:85:60:02:d4   WPA2PSK/AES            78       11b/g/n ABOVE  In  NO     
+7   Kalyan141                        78:54:2e:f0:84:cc   WPA1PSKWPA2PSK/TKIPAES 81       11b/g/n NONE   In YES     
+8   gowthami                         60:e3:27:55:ed:66   WPA2PSK/AES            5        11b/g/n BELOW  In YES     
+10  DIGISOL                          00:17:7c:44:27:49   WPA1PSKWPA2PSK/AES     24       11b/g/n NONE   In YES     
+11  m&m                              d8:fe:e3:7b:24:7a   WPA1PSKWPA2PSK/TKIPAES 10       11b/g/n NONE   In YES     
+11  ALIBABA                          3c:1e:04:0c:31:e4   WPA1PSKWPA2PSK/TKIPAES 13       11b/g/n NONE   In YES     
+11  KUTIR                            4c:60:de:fe:81:c4   WPA2PSK/AES            15       11b/g/n NONE   In YES     
+11  Hathway                          70:5a:9e:64:cf:ee   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In  NO     
+11  shenishetty's                    18:a6:f7:40:f4:ca   WPA1PSKWPA2PSK/AES     2        11b/g/n BELOW  In YES     
+11  n@!n!k@                          78:54:2e:92:5c:d8   WPA2PSK/AES            13       11b/g/n BELOW  In YES     
+
+Mon Oct 17 09:47:04 IST 2016
+ra0       get_site_survey:
+Ch  SSID                             BSSID               Security               Siganl(%)W-Mode  ExtCH  NT WPS DPID
+1   dlink                            c4:12:f5:72:06:fc   WPA1PSKWPA2PSK/TKIPAES 34       11b/g/n NONE   In YES     
+1   NETGEAR18                        28:c6:8e:db:25:3b   WPA2PSK/AES            39       11b/g   NONE   In YES     
+2   Clash of Titans                  90:8d:78:c2:ed:5d   WPAPSK/TKIP            23       11b/g   NONE   In  NO     
+2   G1005                            c4:12:f5:ba:76:22   WPA1PSKWPA2PSK/AES     39       11b/g/n NONE   In  NO     
+2   E3003                            18:a6:f7:7a:b4:32   WPA1PSKWPA2PSK/AES     39       11b/g/n ABOVE  In YES     
+2   sanjaynit                        90:8d:78:c2:ea:29   WPA1PSKWPA2PSK/AES     34       11b/g/n ABOVE  In YES     
+3   Kidar                            78:54:2e:a3:4a:2a   WPA1PSKWPA2PSK/TKIPAES 2        11b/g/n NONE   In YES     
+4   BansalsNet                       6c:b0:ce:71:ff:94   WPA2PSK/AES            0        11b/g/n NONE   In YES     
+5   BEAM287953                       bc:96:81:f5:70:0b   WPAPSK/AES             13       11b/g/n ABOVE  In YES     
+6   wolf's                           28:c6:8e:d6:ff:ec   WPA1PSKWPA2PSK/TKIPAES 15       11b/g   NONE   In YES     
+6   bee..                            e4:71:85:60:02:d4   WPA2PSK/AES            94       11b/g/n ABOVE  In  NO     
+6   bee..                            e4:71:85:60:00:84   WPA2PSK/AES            99       11b/g/n ABOVE  In  NO     
+6   santulucky                       e4:71:85:50:04:84   WPA1PSKWPA2PSK/TKIPAES 86       11b/g/n ABOVE  In  NO     
+7   Kalyan141                        78:54:2e:f0:84:cc   WPA1PSKWPA2PSK/TKIPAES 76       11b/g/n NONE   In YES     
+8   gowthami                         60:e3:27:55:ed:66   WPA2PSK/AES            0        11b/g/n BELOW  In YES     
+8   2012                             e4:6f:13:b7:63:ad   WPA1PSKWPA2PSK/AES     0        11b/g/n NONE   In YES     
+10  G1004                            f4:f2:6d:2a:d1:a0   WPA1PSKWPA2PSK/AES     29       11b/g/n BELOW  In YES     
+10  DIGISOL                          00:17:7c:44:27:49   WPA1PSKWPA2PSK/AES     24       11b/g/n NONE   In YES     
+11  shenishetty's                    18:a6:f7:40:f4:ca   WPA1PSKWPA2PSK/AES     0        11b/g/n BELOW  In YES     
+11  Hathway                          70:5a:9e:64:cf:ee   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In  NO     
+11  n@!n!k@                          78:54:2e:92:5c:d8   WPA2PSK/AES            7        11b/g/n BELOW  In YES     
+11  ALIBABA                          3c:1e:04:0c:31:e4   WPA1PSKWPA2PSK/TKIPAES 2        11b/g/n NONE   In YES     
+11                                   e4:71:85:30:2f:4c   WPA1PSKWPA2PSK/TKIPAES 57       11b/g/n NONE   In  NO     
+11  myhotspot                        0c:60:76:0c:07:97   WPA2PSK/AES            37       11b     NONE   In  NO     
+
+Fri Oct 14 09:27:34 IST 2016
+ra0       get_site_survey:
+Ch  SSID                             BSSID               Security               Siganl(%)W-Mode  ExtCH  NT WPS DPID
+1   Clash of Titans                  90:8d:78:c2:ed:5d   WPAPSK/TKIP            37       11b/g   NONE   In  NO     
+1   G1004                            f4:f2:6d:2a:d1:a0   WPA1PSKWPA2PSK/AES     29       11b/g/n ABOVE  In YES     
+1   NETGEAR18                        28:c6:8e:db:25:3b   WPA2PSK/AES            39       11b/g   NONE   In YES     
+2   SIN                              c0:a0:bb:c7:a4:10   WPA1PSKWPA2PSK/TKIPAES 15       11b/g/n NONE   In YES     
+2   Kidar                            78:54:2e:a3:4a:2a   WPA1PSKWPA2PSK/TKIPAES 7        11b/g/n NONE   In YES     
+3   peek-a-boo                       c4:12:f5:76:85:48   WPA1PSKWPA2PSK/TKIPAES 20       11b/g/n NONE   In YES     
+4   BansalsNet                       6c:b0:ce:71:ff:94   WPA2PSK/AES            2        11b/g/n NONE   In YES     
+6   bee.A                            e4:71:85:60:00:84   WPA2PSK/AES            100      11b/g/n ABOVE  In  NO     
+6   Hathway                          70:5a:9e:64:cf:ee   WPA1PSKWPA2PSK/TKIPAES 5        11b/g/n NONE   In  NO     
+6   bee.A                            e4:71:85:60:02:d4   WPA2PSK/AES            89       11b/g/n ABOVE  In  NO     
+6   Shiva_WIFI                       10:fe:ed:2e:a2:5c   WPA2PSK/TKIPAES        5        11b/g   NONE   In YES     
+7   G1005                            c4:12:f5:ba:76:22   WPA1PSKWPA2PSK/AES     18       11b/g/n NONE   In  NO     
+7   CHETAN                           30:b5:c2:2d:c0:e2   WPA2PSK/AES            44       11b/g/n BELOW  In YES     
+9   madhav                           6c:19:8f:0a:9e:7e   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+9   Kalyan141                        78:54:2e:f0:84:cc   WPA1PSKWPA2PSK/TKIPAES 52       11b/g/n NONE   In YES     
+10  DIGISOL                          00:17:7c:44:27:49   WPA1PSKWPA2PSK/AES     24       11b/g/n NONE   In YES     
+10  sanjaynit                        90:8d:78:c2:ea:29   WPA1PSKWPA2PSK/AES     44       11b/g/n NONE   In YES     
+11  homeWIFI                         e4:71:85:30:2f:4c   WPA1PSKWPA2PSK/TKIPAES 78       11b/g/n NONE   In  NO     
+11  ZTE_MF29_428AD3                  78:e8:b6:42:8a:d3   WPA1PSKWPA2PSK/TKIPAES 20       11b/g/n NONE   In  NO     
+11  E3003                            18:a6:f7:7a:b4:32   WPA1PSKWPA2PSK/AES     0        11b/g/n BELOW  In YES     
+11  myhotspot                        0c:60:76:0c:07:97   WPA2PSK/AES            68       11b     NONE   In  NO     
+11  n@!n!k@                          78:54:2e:92:5c:d8   WPA2PSK/AES            5        11b/g/n BELOW  In YES     
+11  m&m                              d8:fe:e3:7b:24:7a   WPA1PSKWPA2PSK/TKIPAES 10       11b/g/n NONE   In YES     
+
+Fri Oct 14 09:57:18 IST 2016
+ra0       get_site_survey:
+Ch  SSID                             BSSID               Security               Siganl(%)W-Mode  ExtCH  NT WPS DPID
+1   solly                            90:8d:78:10:0b:29   WPA2PSK/AES            29       11b/g/n NONE   In  NO     
+1   G1004                            f4:f2:6d:2a:d1:a0   WPA1PSKWPA2PSK/AES     29       11b/g/n ABOVE  In YES     
+1   NETGEAR18                        28:c6:8e:db:25:3b   WPA2PSK/AES            39       11b/g   NONE   In YES     
+1   wolf's                           28:c6:8e:d6:ff:ec   WPA1PSKWPA2PSK/TKIPAES 29       11b/g   NONE   In YES     
+1   TP-LINK_C100                     c4:e9:84:c2:c1:00   WPA2PSK/AES            29       11b/g/n ABOVE  In YES     
+1   Clash of Titans                  90:8d:78:c2:ed:5d   WPAPSK/TKIP            42       11b/g   NONE   In  NO     
+2   SIN                              c0:a0:bb:c7:a4:10   WPA1PSKWPA2PSK/TKIPAES 18       11b/g/n NONE   In YES     
+2   Kidar                            78:54:2e:a3:4a:2a   WPA1PSKWPA2PSK/TKIPAES 15       11b/g/n NONE   In YES     
+3   peek-a-boo                       c4:12:f5:76:85:48   WPA1PSKWPA2PSK/TKIPAES 20       11b/g/n NONE   In YES     
+4   BansalsNet                       6c:b0:ce:71:ff:94   WPA2PSK/AES            2        11b/g/n NONE   In YES     
+4   NETGEAR60                        28:c6:8e:d8:af:65   WPA2PSK/AES            0        11b/g/n NONE   In YES     
+5   BEAM287953                       bc:96:81:f5:70:0b   WPAPSK/AES             39       11b/g/n NONE   In YES     
+6   santulucky                       e4:71:85:50:04:84   WPA1PSKWPA2PSK/TKIPAES 78       11b/g/n ABOVE  In  NO     
+6   Hathway                          70:5a:9e:64:cf:ee   WPA1PSKWPA2PSK/TKIPAES 7        11b/g/n NONE   In  NO     
+6   bee.A                            e4:71:85:60:02:d4   WPA2PSK/AES            96       11b/g/n ABOVE  In  NO     
+6   Shiva_WIFI                       10:fe:ed:2e:a2:5c   WPA2PSK/TKIPAES        2        11b/g   NONE   In YES     
+6   bee.A                            e4:71:85:60:00:84   WPA2PSK/AES            100      11b/g/n ABOVE  In  NO     
+7   CHETAN                           30:b5:c2:2d:c0:e2   WPA2PSK/AES            50       11b/g/n BELOW  In YES     
+7   G1005                            c4:12:f5:ba:76:22   WPA1PSKWPA2PSK/AES     5        11b/g/n NONE   In  NO     
+8   sabita                           9c:d6:43:cb:e4:c6   WPA1PSKWPA2PSK/TKIPAES 5        11b/g/n NONE   In YES     
+9   madhav                           6c:19:8f:0a:9e:7e   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+9   Kalyan141                        78:54:2e:f0:84:cc   WPA1PSKWPA2PSK/TKIPAES 44       11b/g/n NONE   In YES     
+10  ALIBABA                          3c:1e:04:0c:31:e4   WPA1PSKWPA2PSK/TKIPAES 7        11b/g/n NONE   In YES     
+10  DIGISOL                          00:17:7c:44:27:49   WPA1PSKWPA2PSK/AES     29       11b/g/n NONE   In YES     
+11  m&m                              d8:fe:e3:7b:24:7a   WPA1PSKWPA2PSK/TKIPAES 13       11b/g/n NONE   In YES     
+11  E3003                            18:a6:f7:7a:b4:32   WPA1PSKWPA2PSK/AES     2        11b/g/n BELOW  In YES     
+11  zyxel                            cc:5d:4e:47:62:07   WPAPSK/TKIP            0        11b/g   NONE   In YES     
+11  homeWIFI                         e4:71:85:30:2f:4c   WPA1PSKWPA2PSK/TKIPAES 78       11b/g/n NONE   In  NO     
+11  myhotspot                        0c:60:76:0c:07:97   WPA2PSK/AES            68       11b     NONE   In  NO     
+11  n@!n!k@                          78:54:2e:92:5c:d8   WPA2PSK/AES            5        11b/g/n BELOW  In YES     
+11  bond007                          70:5a:9e:65:8e:2a   WPA1PSKWPA2PSK/TKIPAES 2        11b/g/n NONE   In  NO     
+
+Fri Oct 14 18:20:23 IST 2016
+ra0       get_site_survey:
+Ch  SSID                             BSSID               Security               Siganl(%)W-Mode  ExtCH  NT WPS DPID
+1   Clash of Titans                  90:8d:78:c2:ed:5d   WPAPSK/TKIP            37       11b/g   NONE   In  NO     
+1   GAURAV                           e8:cc:18:ba:5a:40   WPA1PSKWPA2PSK/AES     37       11b/g/n NONE   In YES     
+1   HILLOL/BD                        70:5a:9e:a6:a6:89   WPA1PSKWPA2PSK/TKIPAES 31       11b/g/n NONE   In  NO     
+1   wolf's                           28:c6:8e:d6:ff:ec   WPA1PSKWPA2PSK/TKIPAES 31       11b/g   NONE   In YES     
+1   dlink                            c4:12:f5:72:06:fc   WPA1PSKWPA2PSK/TKIPAES 29       11b/g/n NONE   In YES     
+1   NETGEAR18                        28:c6:8e:db:25:3b   WPA2PSK/AES            44       11b/g   NONE   In YES     
+1   solly                            90:8d:78:10:0b:29   WPA2PSK/AES            29       11b/g/n NONE   In  NO     
+3   CHETAN                           30:b5:c2:2d:c0:e2   WPA2PSK/AES            81       11b/g/n ABOVE  In YES     
+3   peek-a-boo                       c4:12:f5:76:85:48   WPA1PSKWPA2PSK/TKIPAES 42       11b/g/n NONE   In YES     
+4   BansalsNet                       6c:b0:ce:71:ff:94   WPA2PSK/AES            0        11b/g/n NONE   In YES     
+5   BEAM287953                       bc:96:81:f5:70:0b   WPAPSK/AES             39       11b/g/n ABOVE  In YES     
+6   santulucky                       e4:71:85:50:04:84   WPA1PSKWPA2PSK/TKIPAES 70       11b/g/n ABOVE  In  NO     
+6   bee.A                            e4:71:85:60:00:84   WPA2PSK/AES            100      11b/g/n ABOVE  In  NO     
+6   bee.A                            e4:71:85:60:02:d4   WPA2PSK/AES            86       11b/g/n ABOVE  In  NO     
+7   G1005                            c4:12:f5:ba:76:22   WPA1PSKWPA2PSK/AES     7        11b/g/n NONE   In  NO     
+8   sabita                           9c:d6:43:cb:e4:c6   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+9   Kalyan141                        78:54:2e:f0:84:cc   WPA1PSKWPA2PSK/TKIPAES 68       11b/g/n NONE   In YES     
+10  sanjaynit                        90:8d:78:c2:ea:29   WPA1PSKWPA2PSK/AES     31       11b/g/n NONE   In YES     
+10  DIGISOL                          00:17:7c:44:27:49   WPA1PSKWPA2PSK/AES     23       11b/g/n NONE   In YES     
+10  ALIBABA                          3c:1e:04:0c:31:e4   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+11  zyxel                            cc:5d:4e:47:62:07   WPAPSK/TKIP            5        11b/g   NONE   In YES     
+11  hellonet                         50:6a:03:f1:42:6c   WPA2PSK/AES            0        11b/g/n NONE   In YES     
+11  n@!n!k@                          78:54:2e:92:5c:d8   WPA2PSK/AES            0        11b/g/n BELOW  In YES     
+11  homeWIFI                         e4:71:85:30:2f:4c   WPA1PSKWPA2PSK/TKIPAES 70       11b/g/n NONE   In  NO     
+11  shekar                           48:ee:0c:43:94:d2   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+11  madhav                           6c:19:8f:0a:9e:7e   WPA1PSKWPA2PSK/TKIPAES 0        11b/g/n NONE   In YES     
+
+Fri Oct 14 18:49:44 IST 2016
+ra0       get_site_survey:
+Ch  SSID                             BSSID               Security               Siganl(%)W-Mode  ExtCH  NT WPS DPID
+1   Clash of Titans                  90:8d:78:c2:ed:5d   WPAPSK/TKIP            60       11b/g   NONE   In  NO     
+1   dlink                            c4:12:f5:72:06:fc   WPA1PSKWPA2PSK/TKIPAES 37       11b/g/n NONE   In YES     
+1   wolf's                           28:c6:8e:d6:ff:ec   WPA1PSKWPA2PSK/TKIPAES 31       11b/g   NONE   In YES     
+1   NETGEAR18                        28:c6:8e:db:25:3b   WPA2PSK/AES            44       11b/g   NONE   In YES     
+1   G1004                            f4:f2:6d:2a:d1:a0   WPA1PSKWPA2PSK/AES     39       11b/g/n ABOVE  In YES     
+1   GAURAV                           e8:cc:18:ba:5a:40   WPA1PSKWPA2PSK/AES     31       11b/g/n NONE   In YES     
+1   HILLOL/BD                        70:5a:9e:a6:a6:89   WPA1PSKWPA2PSK/TKIPAES 31       11b/g/n NONE   In  NO     
+3   peek-a-boo                       c4:12:f5:76:85:48   WPA1PSKWPA2PSK/TKIPAES 34       11b/g/n NONE   In YES     
+3   CHETAN                           30:b5:c2:2d:c0:e2   WPA2PSK/AES            70       11b/g/n ABOVE  In YES     
+4   BansalsNet                       6c:b0:ce:71:ff:94   WPA2PSK/AES            0        11b/g/n NONE   In YES     
+5   BEAM287953                       bc:96:81:f5:70:0b   WPAPSK/AES             44       11b/g/n ABOVE  In YES     
+6   santulucky                       e4:71:85:50:04:84   WPA1PSKWPA2PSK/TKIPAES 81       11b/g/n ABOVE  In  NO     
+6   bee.A                            e4:71:85:60:00:84   WPA2PSK/AES            100      11b/g/n ABOVE  In  NO     
+6   bee.A                            e4:71:85:60:02:d4   WPA2PSK/AES            86       11b/g/n ABOVE  In  NO     
+7   G1005                            c4:12:f5:ba:76:22   WPA1PSKWPA2PSK/AES     10       11b/g/n NONE   In  NO     
+9   Kalyan141                        78:54:2e:f0:84:cc   WPA1PSKWPA2PSK/TKIPAES 70       11b/g/n NONE   In YES     
+10  DIGISOL                          00:17:7c:44:27:49   WPA1PSKWPA2PSK/AES     24       11b/g/n NONE   In YES     
+10  sanjaynit                        90:8d:78:c2:ea:29   WPA1PSKWPA2PSK/AES     26       11b/g/n NONE   In YES     
+10  ALIBABA                          3c:1e:04:0c:31:e4   WPA1PSKWPA2PSK/TKIPAES 2        11b/g/n NONE   In YES     
+11  n@!n!k@                          78:54:2e:92:5c:d8   WPA2PSK/AES            0        11b/g/n BELOW  In YES     
+11  madhav                           6c:19:8f:0a:9e:7e   WPA1PSKWPA2PSK/TKIPAES 2        11b/g/n NONE   In YES     
+11  zyxel                            cc:5d:4e:47:62:07   WPAPSK/TKIP            0        11b/g   NONE   In YES     
+11  hellonet                         50:6a:03:f1:42:6c   WPA2PSK/AES            0        11b/g/n NONE   In YES     
+
