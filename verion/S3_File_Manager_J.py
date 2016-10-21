@@ -23,20 +23,7 @@ AWS_SECRET_ACCESS_KEY = 'HFTe2g0iV1mm1MjKcGkc6PFEXK7Y/luQkqrNhV9V'
 
 #Default Path & the date of log file we are looking for
 default_path = '/home/joe/PycharmProjects/aws_log_analysis/Mesh_log/'
-
-#computing dates between
-
-date_month = '2016-10-'
-date_day_from = '19'
-date_day_to = '23'
-
-date_final = []
-#date from till to
-
-
-for i in range(int(date_day_from),int(date_day_to)):
-    date_final.append(date_month+str(i))
-
+date = '2016-10-1'
 
 #read and replace the mac address - remove the column
 #then conver that to decimal for query and add to the list
@@ -61,6 +48,10 @@ s3FileManager = S3FileManager(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, use_ssl 
 # S3 Bucket
 fileNames = s3FileManager.getFileNamesInBucket('meshLogs')
 
+#Access the s3 bucket
+
+conn = S3Connection(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY,calling_format=OrdinaryCallingFormat())
+mybucket = conn.get_bucket('meshLogs')
 
 #isolate master,slave1 and slave 2 -- create a directory
 
@@ -72,7 +63,7 @@ class Isolate_Almonds:
     def create_folder(self):
         #sub folder name
         # type of file names are "5G_client_rssi",2_4_client_rssi,"Sitesurvey",Speedtest,
-        f_name = ['5G_client_rssi','2_4_client_rssi','Sitesurvey','Speedtest','Dev_info']
+        f_name = ['5G_client_rssi','2_4_client_rssi','Sitesurvey','Speedtest']
         for org_n in mac_set_folders:
             for add_n in f_name:
                 concodinate = 'Mesh_log/'+str(org_n)+str(add_n)
@@ -98,8 +89,7 @@ class Isolate_Almonds:
         for subdir, dirs, files in os.walk(default_path):
             for filename in files:
                 # print filename
-              for dates in date_final:
-                if filename.find(dates) != -1:
+                if filename.find(date) != -1:
                     # print subdir
                     # print 'cd ' + subdir + ";""cat "+filename+"  >> final.log"
                     path = subdir + '/' + filename
@@ -119,7 +109,7 @@ mac_set_folders=set()
 for macs in mac_list:
 #storing the need key to the list
   for i in fileNames:
-      print i
+      #print i
       str_type=str(i)
       if str_type.find(str(macs)) != -1:
           #identifing the particular macs
@@ -135,9 +125,7 @@ folders.create_folder()
 for keys in needed_key_download:
 # check the file exist or not
       #print default_path+keys
-   for dates in date_final:
-      if str(keys).find(str(dates)) != -1:
-        #print "................"+str(dates)+"...................."
+      if str(keys).find(date) != -1:
         #check the file before downloading
         key_dash=default_path+keys
         new_f=key_dash.replace(" ", "-")
@@ -145,7 +133,7 @@ for keys in needed_key_download:
         folders.rename_with_dash()
         if os.path.exists(new_f) == True:
          #don't download if file exist
-         # print keys + 'file Exist ... No need to download'
+          print keys + 'file Exist ... No need to download'
           pass
         else:
             #download the files
