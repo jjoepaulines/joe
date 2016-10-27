@@ -2,32 +2,50 @@ import re
 import math,os
 from os.path import join
 
+from csvkit import py2
 
-rootdir = '/home/joe/PycharmProjects/aws_log_analysis/Mesh_log/'
-date_month = '2016-10-'
-date_day_from = '20'
-date_day_to = '23'
+h='/home/joe/PycharmProjects/aws_log_analysis-Dev/Mesh_log/251176220099424/251176220099424/5G_client_rssi/2016-10-21-08:52:24'
 
-date_final = []
-#date from till to
+import csv
 
 
-for i in range(20,23):
-    date_final.append(date_month+str(i))
+with open(h, 'rb') as csvfile:
+    hf=py2.CSVKitDictReader(csvfile)
+    num_lines = sum(1 for line in open(h))
+    # create a new CSV file for rssi
+    with open('names.csv', 'w') as csvfile:
+        fieldnames = ['BSSID','Client_MAC', 'Rssi0', 'Rssi1', 'Connection_Time', 'EpocTime']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for i in range(1,num_lines):
+            print hf.next()['Client_MAC']
+            writer.writerow({'Client_MAC': hf.next()['Client_MAC'], 'Rssi0': hf.next()['Rssi0'], 'Rssi1': hf.next()['Rssi1'], 'Connection_Time': hf.next()['Connection_Time'],'EpocTime': hf.next()['EpocTime']})
 
-print date_final
 
-h='/home/joe/PycharmProjects/aws_log_analysis/Mesh_log/251176220099152/251176220099152/2_4_client_rssi/2016-10-15 00:24:51'
-
+hhd='251176220099704/251176220100832'
 
 
+
+
+print hhd[0:15]
+print hhd[16:33]
 #print str(h).find(date)
 
 #if str(h).find(date) == -1:
    # pass
+import time
+
+print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(1477259461))
 
 
+hh=str(251176216953072)
+print hex(int(hh))
 
+new_f='/home/joe/PycharmProjects/aws_log_analysis-Dev/Mesh_log/251176220099704/251176220099704/2_4_client_rssi/2016-10-26-15:30:40'
+if new_f.find('2_4_client_rsi')!= -1:
+    print 'there'
+else:
+    print 'not there'
 
 
 '''

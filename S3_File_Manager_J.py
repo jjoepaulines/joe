@@ -2,6 +2,8 @@ import os
 from S3FMA import *
 from boto.s3.connection import S3Connection
 from boto.s3.key import Key
+from Mesh_details import *
+
 # Mac Address List - file name
 
 Fname = 'mac_address.txt'
@@ -22,13 +24,17 @@ AWS_ACCESS_KEY_ID = 'AKIAJH7PLPL7A6XIOAMQ'
 AWS_SECRET_ACCESS_KEY = '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'
 
 #Default Path & the date of log file we are looking for
-default_path = '/home/joe/PycharmProjects/aws_log_analysis/Mesh_log/'
+default_path = '/home/joe/PycharmProjects/aws_log_analysis-Dev/Mesh_log/'
 
-#computing dates between
+# Colleced information list
+
+path_for_info='/home/joe/Log_analyser/'
+
+#computing between dates
 
 date_month = '2016-10-'
-date_day_from = '19'
-date_day_to = '23'
+date_day_from = '26'
+date_day_to = '27'
 
 date_final = []
 #date from till to
@@ -37,6 +43,9 @@ date_final = []
 for i in range(int(date_day_from),int(date_day_to)):
     date_final.append(date_month+str(i))
 
+#dictionary for maintain the instance of the class
+
+Dict_master_instance={}
 
 #read and replace the mac address - remove the column
 #then conver that to decimal for query and add to the list
@@ -48,11 +57,15 @@ with open(Fname) as f:
         # subract by four
         final_mac=dec_mac -sub_value
         mac_list.append(final_mac)
+        #creating instance to the class
+        Dict_master_instance[str(final_mac)] = Mesh_details_C(str(final_mac))
+        #create the instance of the mesh details here and add to dictionary
+
         print mac + ' -------------------- ' +str(final_mac)
 
 # print mac_list -- display the mac - decimal
 
-
+print Dict_master_instance
 
 # using S3FMA
 
@@ -60,7 +73,6 @@ s3FileManager = S3FileManager(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, use_ssl 
 
 # S3 Bucket
 fileNames = s3FileManager.getFileNamesInBucket('meshLogs')
-
 
 #isolate master,slave1 and slave 2 -- create a directory
 
@@ -93,7 +105,7 @@ class Isolate_Almonds:
                 except:
                     pass
 
-    #define the path
+    #define the path & based on the filter files are getting dispatched
     def combine_file(self):
         for subdir, dirs, files in os.walk(default_path):
             for filename in files:
@@ -106,6 +118,7 @@ class Isolate_Almonds:
                     os.rename(path, path.replace(" ", "-"))
                     #print path
                     # print "cat "+path+"  >> "+subdir+"/final.log"
+                    #Here new files has been formed by using the date as a filter
                     os.system("cat " + path + "  >> " + subdir + "/final.log")
 
 
@@ -113,20 +126,24 @@ class Isolate_Almonds:
 
 mac_set_folders=set()
 
+# set to isolate the mac address of the clients
 
-#iteration for the mac's
+mac_for_isolate=set()
+
+#iteration for the mac's and storing the keys in the list
 
 for macs in mac_list:
 #storing the need key to the list
   for i in fileNames:
-      print i
+      #print i
       str_type=str(i)
       if str_type.find(str(macs)) != -1:
           #identifing the particular macs
           mac_set_folders.add(str_type[0:32])
+          mac_for_isolate.add(str_type[0:15])
           needed_key_download.append(str_type)
 
-print mac_set_folders
+#print mac_set_folders
 #create a folders
 folders = Isolate_Almonds()
 folders.create_folder()
@@ -134,27 +151,46 @@ folders.create_folder()
 # Download the files to the concern directory
 for keys in needed_key_download:
 # check the file exist or not
-      #print default_path+keys
-   for dates in date_final:
-      if str(keys).find(str(dates)) != -1:
-        #print "................"+str(dates)+"...................."
-        #check the file before downloading
-        key_dash=default_path+keys
-        new_f=key_dash.replace(" ", "-")
-        #rename all with dash
-        folders.rename_with_dash()
-        if os.path.exists(new_f) == True:
-         #don't download if file exist
-         # print keys + 'file Exist ... No need to download'
-          pass
-        else:
-            #download the files
-            s3FileManager.downloadFileFromBucket('meshLogs',keys,default_path)
+   # adding the mac to
+   #print keys
+    for dates in date_final:
 
+        if str(keys).find(str(dates)) != -1:
+            #print "................"+str(dates)+"...................."
+            #check the file before downloading
+            key_dash=default_path+keys
+            #print keys
+            #Adding slave details to mesh detail class
+            Dict_master_instance[keys[0:15]].slave_details.add(str(keys[16:31]))
+            new_f=key_dash.replace(" ", "-")
+            print new_f
+            #put a condition to fill the URL in the set
+            if new_f.find('2_4_client_rssi') != -1:
+                Dict_master_instance[keys[0:15]].RSSI_URL.add(new_f)
+            elif new_f.find('5G_client_rssi') != -1:
+                Dict_master_instance[keys[0:15]].RSSI_URL.add(new_f)
+            elif new_f.find('Sitesurvey') != -1:
+                Dict_master_instance[keys[0:15]].RSSI_URL.site_survey_URL(new_f)
+            elif new_f.find('Speedtest') != -1:
+                Dict_master_instance[keys[0:15]].RSSI_URL.speedtest_URL(new_f)
+            #rename all with dash
+            folders.rename_with_dash()
+            if os.path.exists(new_f) == True:
+             #don't download if file exist
+             #print keys + 'file Exist ... No need to download'
+              pass
+            else:
+                #download the files
+                s3FileManager.downloadFileFromBucket('meshLogs',keys,default_path)
+
+
+Dict_master_instance['251176220099704'].write_all_content()
+Dict_master_instance['251176220099704'].dispatch_all_the_URL()
 #combine the files
 folders.rename_with_dash()
 folders.combine_file()
-#test
+
+
 
 
 
