@@ -3,6 +3,7 @@ from S3FMA import *
 from boto.s3.connection import S3Connection
 from boto.s3.key import Key
 from Mesh_details import *
+import csv
 
 # Mac Address List - file name
 
@@ -33,8 +34,8 @@ path_for_info='/home/joe/Log_analyser/'
 #computing between dates
 
 date_month = '2016-10-'
-date_day_from = '26'
-date_day_to = '27'
+date_day_from = '23'
+date_day_to = '29'
 
 date_final = []
 #date from till to
@@ -152,7 +153,7 @@ folders.create_folder()
 for keys in needed_key_download:
 # check the file exist or not
    # adding the mac to
-   #print keys
+    #print keys
     for dates in date_final:
 
         if str(keys).find(str(dates)) != -1:
@@ -163,16 +164,16 @@ for keys in needed_key_download:
             #Adding slave details to mesh detail class
             Dict_master_instance[keys[0:15]].slave_details.add(str(keys[16:31]))
             new_f=key_dash.replace(" ", "-")
-            print new_f
+            #print "neeeeeeeeeeeee"+str(new_f)
             #put a condition to fill the URL in the set
             if new_f.find('2_4_client_rssi') != -1:
                 Dict_master_instance[keys[0:15]].RSSI_URL.add(new_f)
             elif new_f.find('5G_client_rssi') != -1:
                 Dict_master_instance[keys[0:15]].RSSI_URL.add(new_f)
             elif new_f.find('Sitesurvey') != -1:
-                Dict_master_instance[keys[0:15]].RSSI_URL.site_survey_URL(new_f)
+                Dict_master_instance[keys[0:15]].site_survey_URL.add(new_f)
             elif new_f.find('Speedtest') != -1:
-                Dict_master_instance[keys[0:15]].RSSI_URL.speedtest_URL(new_f)
+                Dict_master_instance[keys[0:15]].speedtest_URL.add(new_f)
             #rename all with dash
             folders.rename_with_dash()
             if os.path.exists(new_f) == True:
@@ -183,12 +184,15 @@ for keys in needed_key_download:
                 #download the files
                 s3FileManager.downloadFileFromBucket('meshLogs',keys,default_path)
 
-
-Dict_master_instance['251176220099704'].write_all_content()
-Dict_master_instance['251176220099704'].dispatch_all_the_URL()
 #combine the files
 folders.rename_with_dash()
 folders.combine_file()
+
+Dict_master_instance['251176220101896'].write_all_content()
+Dict_master_instance['251176220101896'].dispatch_all_the_URL()
+Dict_master_instance['251176220101896'].identify_the_client()
+Dict_master_instance['251176220101896'].writing_client_details_per_almond()
+
 
 
 

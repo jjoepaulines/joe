@@ -8,6 +8,7 @@ h='/home/joe/PycharmProjects/aws_log_analysis-Dev/Mesh_log/251176220099424/25117
 
 import csv
 
+'''
 
 with open(h, 'rb') as csvfile:
     hf=py2.CSVKitDictReader(csvfile)
@@ -18,17 +19,27 @@ with open(h, 'rb') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for i in range(1,num_lines):
-            print hf.next()['Client_MAC']
-            writer.writerow({'Client_MAC': hf.next()['Client_MAC'], 'Rssi0': hf.next()['Rssi0'], 'Rssi1': hf.next()['Rssi1'], 'Connection_Time': hf.next()['Connection_Time'],'EpocTime': hf.next()['EpocTime']})
+            #print hf.next()['Client_MAC']
+            try:
+                writer.writerow({'Client_MAC': hf.next()['Client_MAC'], 'Rssi0': hf.next()['Rssi0'], 'Rssi1': hf.next()['Rssi1'], 'Connection_Time': hf.next()['Connection_Time'],'EpocTime': hf.next()['EpocTime']})
+            except:
+                pass
+
+'''
+
+hhd='/home/joe/PycharmProjects/aws_log_analysis-Dev/Mesh_log/251176220099704/251176220099704/2_4_client_rssi/2016-10-16-09:00:40'
+
+path_h='/home/joe/PycharmProjects/aws_log_analysis-Dev/Details_info-final/'
+
+command = 'grep -i ' + str('A4:31:35:0A:40:CE') + ' ' + hhd + ' >> ' +path_h+'0xe471856002d4/'+str('A4:31:35:0A:40:CE')+'_RSSI'
+os.system(command)
+
+print command
 
 
-hhd='251176220099704/251176220100832'
 
-
-
-
-print hhd[0:15]
-print hhd[16:33]
+print hhd[56:71]
+print hhd[72:87]
 #print str(h).find(date)
 
 #if str(h).find(date) == -1:
